@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Candidatura para Lecionar</h1>       
+    </header>
+
+    <section id="section-form-canditato">
+        <form id="form" name="form" action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br/>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br/>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade"><br/>
+
+                <label for="materia">Para qual matéria você está se candidatando:</label>
+                <select id="materia" name="materia"  title="Por favor, selecione uma matéria" required>                    
+                    <option value="" selected>---</option>
+                    <option value="artes">Artes</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="historia">História</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>                    
+                </select><br/>
+
+                <label for="escolaridade">Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade"  title="Por favor, selecione a escolaridade" required>                    
+                    <option value="" selected>---</option>
+                    <option value="superior-completo">Ensino Superior Completo</option>
+                    <option value="mestrado-completo">Mestrado Completo</option>
+                    <option value="mestrado-cursando">Cursando Mestrado</option>
+                    <option value="doutorado-completo">Doutorado Completo</option>
+                    <option value="doutorado-cursando">Cursando Doutorado</option>                             
+                </select><br/>
+
+                <input type="checkbox" id="turno-matutino" name="turno-matutino">
+                <label for="turno-matutino">Matutino</label>
+
+                <input type="checkbox" id="turno-vespertino" name="turno-vespertino">
+                <label for="turno-vespertino">Vespertino</label>
+
+                <input type="checkbox" id="turno-noturno" name="turno-noturno">
+                <label for="turno-noturno">Noturno</label><br/>
+
+
+                <label for="descricao">Descreva você mesmo:</label>
+                <textarea id="descricao" name="descricao" cols="30" rows="10" maxlength="200" required></textarea><br/>
+            
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+    </section>
+
+     <footer>      
+    </footer>
+</body>
+</html>
