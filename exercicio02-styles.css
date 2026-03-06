@@ -1,0 +1,38 @@
+/*
+Seletor de elemento(tag): <p>Seleciona</p>
+
+Seletor de id: #meu-id <p id="meu-id"></p>
+
+Seletor de class: .minha-classe <p class="minha-classe"></p>
+
+Seletor de atributo: img[src] <img src="minha-img.png"> MAS NÃO É <img>
+
+Seletor de pseudo-classe: a:hover Seleciona a mas somente quando o mouse está em cima do link
+*/
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+} 
+
+p{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ div{
+   height: 200px;
+   color: black;
+ }
+
+ a{
+   color: red;
+
+ }
+
+ #paragrafo1{
+   text-transform: uppercase;
+ }
+
+ .sublinhado{
+   text-decoration: underline;
+ }

@@ -1,0 +1,17 @@
+/* Seletor de tag para todos os parágrafos */
+p {
+  color: blue; /* Cor do texto */
+  font-family: Arial, sans-serif; /* Tipo de fonte */
+}
+
+/* Seletor de classe para parágrafos com a classe 'texto-destaque' */
+.texto-destaque {
+  color: green; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Seletor de ID para o parágrafo com ID 'texto-unico' */
+#texto-unico {
+  color: red; /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+}

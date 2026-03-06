@@ -1,0 +1,27 @@
+/*
+Seletor adjacente (p + a): a tag a que vier imediatamente depois de fechar tag p vai receber essas regras.
+
+Seletor irmão (p ~ a): todas as tag a que vierem depois de fechar tag p vai receber essas regras.
+
+Seletor filho (p > a): as tag a que vierem imediatamente na árvore dentro da tag p vão receber essas regras.
+
+Seletor descendente (p  a): todas as tag a que estiverem dentro da tag p, mesmo dentro de outras tag
+ vão receber essas regras.
+*/
+p ~ a{
+    font-weight: bold;
+    color: red;
+
+}
+
+p > a{
+    font-weight: bold;
+    color: green;
+
+}
+
+span  a{
+    font-weight: bold;
+    color: yellow;
+
+}

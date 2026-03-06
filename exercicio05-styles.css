@@ -1,0 +1,26 @@
+/*
+Elementos como div, p, article e h1 ocupam a linha inteira na tela.
+
+Elementos inline (display: inline;) não permitem margin pois eles se ajustam na tela.
+
+Para usar margin precisa definir como inline-block.
+*/
+.display-block{
+    display: block;
+    height: 200px;
+    background-color: blue;
+    border: 1px solid #000;
+}
+
+.display-inline{
+    display: inline-block;
+    background-color: green;
+    border: 1px solid #000;
+}
+
+.display-inline-block{
+    display: inline-block;
+    background-color: pink;
+    border: 1px solid #000;
+    margin-top: 30px;
+}
