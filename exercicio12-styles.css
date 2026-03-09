@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /* auto-fit, ajusta as colunas conforme o tamanho da tela 
+    minmax(tamanho mínimo, tamanho máximo)*/
+    gap: 20px;
+    padding: 20px;
+}
+
+.content{
+    background-color: rgb(201, 196, 196);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px; /* com position fixed, aqui diz que vai ficar fixo no rodapé */
+    width: 100%;
+}
+
+
+

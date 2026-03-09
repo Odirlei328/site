@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+ /*outline: 2px solid red; para ver onde está gerando a barra de rolagem */
+}
+
+div{
+    background-color: rgb(189, 227, 241);
+    /*border: 1px solid #000;*/
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */   
+    margin: 10px;
+}
+
+.interna{
+    margin: 0px;
+    background-color: rgb(139, 207, 231);
+    border: 1px solid  rgb(83, 164, 194);    
+    text-align: center;
+    width: 5.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
+.header{
+    height: 15vh; /* Exemplo de altura */
+    /*position: sticky;
+    position: -webkit-sticky; /*deixa o cabeçalho fixo no topo da tela ao rolar*/
+    top: 0px; /* aqui foi definido onde iria ficar fixo*/
+    margin-top: 0px;
+    align-items: center;
+}
+
+.menu{
+    height: 10vh; /* Exemplo de altura */
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.container{
+    min-height: 300px;    
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr; /* em quantas fraçoes será dividido a tela*/
+    /*grid-template-rows: auto 1fr;*/
+    background: none;  
+    margin: 0px;
+}
+
+.coluna-esquerda{
+    float: right;
+    margin-right: 0px;
+    padding-right: 0px;  
+    
+    align-items: center;
+    justify-content:end; /* Centraliza à direita */  
+
+}
+
+.conteudo{
+    align-items: center;
+    
+}
+
+.coluna-direita{
+    float: left;
+    margin-left: 0px;
+    align-items: center;
+    text-align: left;
+    justify-content:start; /* Centraliza à esquera */
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start; /* Alinha itens no topo */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 10vh; /* Exemplo de altura */
+    margin-top: 0px;
+    padding-top: 10px;
+}

@@ -1,0 +1,61 @@
+/*Propriedades do flex box:
+Flex-direction: se é direção row ou direção column.
+Existe a opção row-reverse e column-reverse que mas a disposição na ordem inversa e no outro lado (na direita ou do rodapé pra cima).
+Se não definir o padrão é row (um ao lado do outro na linha).
+
+
+CSS GRID é bidirecional, usado para layouts mais complexos com estrura de grade.
+Já o FLEX BOX é unidirecional, ideal para agrupar vários elementos em uma linha ou coluna.
+
+Dica: aprenda flexbox jogando, site https://flexboxfroggy.com/ e mastery.games/flexboxzombies
+*/
+.container{
+    background-color: rgb(90, 90, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 100px;
+    height: 500px;
+    display: flex; 
+    flex-direction: column-reverse;
+    align-items: flex-end; /*flex-start: alinha à esquerda. flex-end: alinha à direita e center...*/
+
+    /*flex-direction: row-reverse;
+    justify-content: flex-end;  como acima está reverse, o end do reverse é na esquerda */
+
+    /* justify-content: space-between; distribui os elementos pelo espaço do container pai*/
+    /* justify-content: space-around; distribui os elementos pelo espaço do container pai, deixando espaços nas laterais*/
+    /* justify-content: space-around; distribui e centraliza os elementos pelo espaço do container pai*/
+
+    flex-wrap: wrap; /*padrão é nowrap: não quebra a linha. Wrap significa quebrar a linha se não tiver espaço.
+    E tem wrap-reverse que, quando quebrar inverte os elementos.*/
+
+    align-content: flex-end; /* só é funcional quando tem flex-wrap, ele alinha os elementos VERTICALMENTE */
+
+    gap: 15px; /*simula o margin quando é usado display: flex; ou display: grid; */ 
+    /*column-gap: 20px; define a margem entre colunas*/
+    /*row-gap: 20px; define a margem entre as linhas*/
+    
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    border: 3px solid #666;
+}
+
+#box1{
+    background-color: aquamarine;
+    flex-grow: 1; /* diz que o elemento pode crescer na proporção que foi definido entre ele e os outros */
+}
+
+#box2{
+    background-color:antiquewhite;
+    flex-grow: 2; /* diz que o elemento pode crescer na proporção que foi definido entre ele e os outros */
+}
+
+
+#box3{
+    background-color: blueviolet;
+    flex-grow: 1; /* diz que o elemento pode crescer na proporção que foi definido entre ele e os outros */
+}

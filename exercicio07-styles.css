@@ -5,8 +5,34 @@
     */
     position: sticky;
     position: -webkit-sticky; /*deixa o cabeçalho fixo no topo da tela ao rolar*/
-    top: 30px; /* aqui foi definido onde iria ficar fixo*/
+    top: 10px; /* aqui foi definido onde iria ficar fixo*/
     border: 1px solid #000;
     padding: 10px;
     font-size: 20px;
+}
+
+.relativo{
+    position: relative;
+    height: 100px;
+    background-color: blue;       
+}
+
+.absoluto{
+    position: absolute; /* diz que vai ser definido bem aqui, ou seja, precisa definir onde*/
+    height: 50px;
+    background-color: red;
+    /* abaixo descrevi onde ela deve ficar */
+    bottom: 0px;
+    right: 10px;
+    width: 20px;
+
+}
+
+.fixo{
+    position: fixed; /* também precisa determinar a posição do elemento */
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
 }

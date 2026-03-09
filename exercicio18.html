@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+     <!--<link rel="stylesheet" href="exercicio14-styles.css" />-->
+    <script rel="stylesheet" src="exercicio18.js"></script>
+</head>
+<body>
+    <h1>Saudação em Outro Idioma</h1>
+
+     <label for="idioma">Escolaridade:</label>
+    <select id="idioma" name="idioma"  title="Por favor, selecione o Idioma" required>                    
+        <option value="" selected>---</option>
+        <option value="portugues">Português</option>
+        <option value="ingles">Inglês</option>
+        <option value="espanhol">Espanhol</option>                          
+    </select><br/>
+  
+    <br/>
+    <button id="traduzir" onclick="executaTraducao()">Calcular</button>
+    <br/><br/>
+    <p id="resultado"></p>
+
+</body>
+</html>

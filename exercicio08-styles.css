@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* em quantas fraçoes será dividido a tela*/
+    grid-template-rows: auto 1fr;
+}
+
+.header{    
+    grid-column: 1 / -1; /*grid-column: coluna inicio / coluna final*/
+    background-color: rgb(204, 186, 162);
+    padding: 20px;
+}
+
+.sidebar{
+    background-color: rgb(114, 102, 88);
+    padding: 20px;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}

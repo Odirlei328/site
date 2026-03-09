@@ -1,0 +1,36 @@
+/*
+A responsividade é fundamentada em 3 técnicas combinadas:
+1. Grades fluídas: tamanhos relativos, com %, em e vh e o fr. Também com float, grid e flexbox.
+
+2. Imagens fluídas: max-width, srcset (define um conjunto de imagens para o navegador escolher o tamanho que vai mostrar),
+ picture. Com o Media query: adapta o CSS a diferentes telas, conforme o CSS que a gente definir.
+
+3. Tipografia responsiva: adaptar responsivamente os tamanhos da fontes para as telas. Utilizando o Media Query, definir o tamanho da fonte.
+*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
+p, .item1, .item2, .item3, .item4, .item5{
+    border: 1px solid #000;
+}
+
+/*
+grid-template-areas também dá pra fezer isso
+*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.container-areas {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+}
