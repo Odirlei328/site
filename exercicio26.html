@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 26</title>
+    <!--<link rel="stylesheet" href="exercicio24-styles.css" />-->   
+    <style>
+        body{
+            display: flex; 
+            justify-content: center;
+            background-color: rgb(146, 171, 240);  
+        } 
+        
+        input, textarea, button{
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        textarea{
+            display: block;
+            width: 250px;
+            height: 200px;
+        }
+
+        label{
+           /* display: block;*/
+        }
+
+        #labelMessage{
+            display: block;
+        }
+
+        .aviso{
+            font-size: small;
+            color: red;
+        }
+
+    </style>    
+</head>
+<body>    
+    <div class="conteudo">
+        <h1>Formulário de Contato</h1>
+
+        <form id="contactForm">
+            <div>
+                <label for="name">Nome: </label>
+                <input type="text" id="name" placeholder="Digite seu Nome" required maxlength="256">
+                <label id="erroNome" class="aviso"></label>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" placeholder="Digite seu Email" required maxlength="350">
+                <label id="erroEmail" class="aviso"></label>
+            </div>
+            <div>
+                <label for="phone">Telefone: </label>
+                <input type="text" id="phone" placeholder="Digite seu Telefone" required maxlength="15">
+                <label id="erroTelefone" class="aviso"></label>
+            </div>
+            <div>
+                <label for="password">Senha: </label>
+                <input type="text" id="password" placeholder="Digite a senha" required maxlength="15">
+                <label id="erroSenha" class="aviso"></label>
+            </div>
+            <div>
+                <label for="rePassword">Senha: </label>
+                <input type="text" id="rePassword" placeholder="Digite a senha novamente" required maxlength="15">
+                <label id="erroReSenha" class="aviso"></label>
+            </div>
+            <div>
+                <label for="message" id="labelMessage">Mensagem: </label>
+                <textarea required id="message"></textarea>  
+                <label id="erroMensagem" class="aviso"></label>      
+            </div>
+            <div>
+                <button type="submit">Enviar Formulário</button>
+            </div>
+        </form>
+    </div>
+    
+    <script rel="stylesheet" src="exercicio26.js"></script>
+</body>
+</html>

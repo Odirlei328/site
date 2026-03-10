@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+    <!--<link rel="stylesheet" href="exercicio24-styles.css" />-->   
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;           
+           background-color:rgb(186, 217, 218);
+        }
+
+        #conteudo{
+            display: flex;            
+            gap: 10px;
+            width: 50vw;           
+            background-color: rgb(250, 229, 204);
+            justify-content: center;
+            border-radius: 15px;
+            border: 1px solid rgb(88, 149, 151);
+
+        }
+
+        input{
+            width: 50vw; 
+            height: 25px;
+            border-radius: 10px;
+            border: 1px solid rgb(88, 149, 151);
+            background-color: rgb(250, 229, 204);
+        }
+
+        button{
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(88, 149, 151);
+            background-color: rgb(240, 208, 169);
+            height: 35px;
+            width: 25vw;
+       }     
+    </style>      
+</head>
+<body>    
+    <h1>Lista de Tarefas</h1>
+
+    <label for="addTarefa">Tarefa: </label>
+    <input type="text" id="textoTarefa" placeholder="Digite e pressione Enter">
+    <button id="botaoAddTarefa">Adicionar Tarefa</button>
+
+    <div id="conteudo">
+        <ul id="tarefas">         
+        </ul>
+    </div>
+
+    <button id="botaoReset">Ligar o F.</button>
+
+    <script rel="stylesheet" src="exercicio25.js"></script>
+</body>
+</html>
